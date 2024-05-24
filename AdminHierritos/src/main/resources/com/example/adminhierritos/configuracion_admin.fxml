@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="349.0" prefWidth="560.0" style="-fx-padding: 70 px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminhierritos.ConfiguracionController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #0e103c;">
+         <children>
+            <Label prefHeight="67.0" prefWidth="560.0" style="-fx-background-color: #0e103c; -fx-label-padding: 10; -fx-translate-x: 10;" text="CONFIGURACIÓN" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="botonCerrar" mnemonicParsing="false" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: #0e103c;" text="x" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="31.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox prefHeight="327.0" prefWidth="560.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="560.0" style="-fx-pref-height: 47; -fx-spacing: 20;">
+               <children>
+                  <CheckBox fx:id="checkBoxDesCliente" mnemonicParsing="false" prefHeight="23.0" prefWidth="218.0" text="Descuento cliente frecuente:">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField prefHeight="14.0" prefWidth="262.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="560.0" style="-fx-pref-height: 47; -fx-spacing: 20;">
+               <children>
+                  <CheckBox fx:id="checkBoxIVA" mnemonicParsing="false" prefHeight="23.0" prefWidth="218.0" text="IVA:">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField prefHeight="14.0" prefWidth="262.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="560.0" style="-fx-pref-height: 47; -fx-spacing: 20;">
+               <children>
+                  <CheckBox fx:id="checkBoxNombre" mnemonicParsing="false" prefHeight="23.0" prefWidth="218.0" text="Nombre:">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField prefHeight="14.0" prefWidth="262.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="560.0" style="-fx-pref-height: 47; -fx-spacing: 20;">
+               <children>
+                  <CheckBox fx:id="checkBoxNIT" mnemonicParsing="false" prefHeight="23.0" prefWidth="218.0" text="NIT:">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField prefHeight="14.0" prefWidth="262.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="560.0" style="-fx-pref-height: 47; -fx-spacing: 20;">
+               <children>
+                  <CheckBox fx:id="checkBoxDesc" mnemonicParsing="false" prefHeight="23.0" prefWidth="218.0" text="Descripción:">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField prefHeight="14.0" prefWidth="262.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="560.0" style="-fx-pref-height: 47; -fx-spacing: 20;">
+               <children>
+                  <CheckBox fx:id="checkBoxTelefono" mnemonicParsing="false" prefHeight="23.0" prefWidth="218.0" text="Teléfono:">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField prefHeight="14.0" prefWidth="262.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

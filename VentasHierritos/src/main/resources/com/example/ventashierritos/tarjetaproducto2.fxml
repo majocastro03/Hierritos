@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="tarjeta" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="304.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ventashierritos.TarjetaProducto2Controller">
+   <children>
+      <VBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="243.0" style="-fx-padding: 10; -fx-spacing: 2;">
+         <children>
+            <Label fx:id="labelNomProducto" prefHeight="18.0" prefWidth="305.0" text="Nombre del producto" textFill="#0e103c">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="labelIDProducto" prefHeight="18.0" prefWidth="77.0" text="ID Producto" textFill="#0e103c">
+                     <font>
+                        <Font name="Segoe UI Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelCantidad" prefHeight="18.0" prefWidth="118.0" text="Cantidad:">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="botonX" mnemonicParsing="false" onAction="#clickBotonX" prefHeight="79.0" prefWidth="71.0" style="-fx-background-color: #F0726D;" text="X" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="32.0" />
+         </font>
+      </Button>
+   </children>
+</HBox>

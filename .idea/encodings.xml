@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AdminHierritos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AdminHierritos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AlmacenHierritos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AlmacenHierritos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServerHierritos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServerHierritos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServerYDBHierritos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServerYDBHierritos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/VentasHierritos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/VentasHierritos/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

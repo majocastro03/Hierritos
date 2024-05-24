@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" spacing="20.0" style="-fx-background-color: white; -fx-padding: 0px; -fx-spacing: 0px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ventashierritos.CotizacionController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white; -fx-padding: 10px; -fx-spacing: 15;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 10;">
+               <image>
+                  <Image url="@Images/logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="548.0" style="-fx-translate-y: 33; -fx-max-height: 30;" text="Cotización" textAlignment="RIGHT">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="613.0" prefWidth="900.0" style="-fx-padding: 0;">
+         <children>
+            <Pane prefHeight="508.0" prefWidth="652.0" style="-fx-padding: 40; -fx-background-color: white;">
+               <children>
+                  <VBox layoutX="21.0" layoutY="-1.0" prefHeight="487.0" prefWidth="633.0" style="-fx-border-color: #0e103c; -fx-border-radius: 10;">
+                     <children>
+                        <ScrollPane maxWidth="1256.0" prefHeight="488.0" prefWidth="900.0" style="-fx-background-color: E0E7FE; -fx-max-width: 840;">
+                           <content>
+                              <TextArea fx:id="textArea" prefHeight="490.0" prefWidth="616.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="508.0" prefWidth="237.0" style="-fx-spacing: 10; -fx-padding: 30;">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="352.0" prefWidth="177.0" style="-fx-spacing: 10;">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="30.0" prefWidth="548.0" style="-fx-max-height: 30;" text="Id" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldId" style="-fx-pref-height: 27;" />
+                        <Button fx:id="botonBuscar" mnemonicParsing="false" onAction="#clickBotonBuscar" prefHeight="27.0" prefWidth="177.0" style="-fx-background-color: C5D0F6;" text="Buscar" textFill="#0e103c">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button fx:id="botonCancelar" mnemonicParsing="false" onAction="#clickBotonCancelar" prefHeight="37.0" prefWidth="184.0" style="-fx-background-color: gray;" text="Cancelar" textFill="#f7f7f7">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonPagarCot" mnemonicParsing="false" onAction="#clickBotonPagarCot" prefHeight="37.0" prefWidth="184.0" style="-fx-background-color: #0e103c;" text="Pagar" textFill="#f7f7f7">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-pref-height: 382; -fx-pref-width: 840;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adminhierritos.DevolucionesInformesController">
+   <children>
+      <Label prefHeight="67.0" prefWidth="1013.0" style="-fx-background-color: C5D0F6; -fx-label-padding: 20;" text="Devoluciones" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Label>
+      <ScrollPane prefHeight="315.0" prefWidth="840.0">
+         <content>
+            <TextArea fx:id="textArea" prefHeight="1080.0" prefWidth="825.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

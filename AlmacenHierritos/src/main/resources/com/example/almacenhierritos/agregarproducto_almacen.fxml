@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" spacing="20.0" style="-fx-background-color: white; -fx-padding: 0px; -fx-spacing: 0px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prueba.HelloController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white; -fx-padding: 10px; -fx-spacing: 15;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 10;">
+               <image>
+                  <Image url="@../../../../Images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" maxWidth="911.0" prefHeight="346.0" prefWidth="900.0" style="-fx-spacing: 20;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="207.0" prefWidth="840.0" style="-fx-background-color: E0E7FE; -fx-spacing: 20; -fx-pref-height: fill; -fx-max-width: 840;">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="223.0" prefWidth="501.0" style="-fx-spacing: 10; -fx-padding: 20;">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="332.0" text="Nombre producto" textFill="#0e103c">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldNomProducto">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </TextField>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="360.0" style="-fx-spacing: 20;">
+                           <children>
+                              <VBox prefHeight="57.0" prefWidth="221.0" style="-fx-spacing: 10;">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="416.0" text="Precio venta" textFill="#0e103c">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textfieldPrecioVenta">
+                                       <font>
+                                          <Font name="Segoe UI" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="57.0" prefWidth="218.0" style="-fx-spacing: 10;">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="416.0" text="Precio compra" textFill="#0e103c">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textfieldPrecioCompra">
+                                       <font>
+                                          <Font name="Segoe UI" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="18.0" prefWidth="332.0" text="Porcentaje IVA" textFill="#0e103c">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textfieldPorcIVA">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="223.0" prefWidth="521.0" style="-fx-spacing: 10; -fx-padding: 20;">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="332.0" text="Descripción producto" textFill="#0e103c">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textfieldDescProducto">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </TextField>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="52.0" prefWidth="380.0" style="-fx-spacing: 20;">
+                           <children>
+                              <VBox prefHeight="57.0" prefWidth="221.0" style="-fx-spacing: 10;">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="416.0" text="Cantidad mínima" textFill="#0e103c">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textfieldCantMinima">
+                                       <font>
+                                          <Font name="Segoe UI" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="57.0" prefWidth="218.0" style="-fx-spacing: 10;">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="416.0" text="Cantidad máxima" textFill="#0e103c">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textfieldCantMaxima">
+                                       <font>
+                                          <Font name="Segoe UI" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="75.0" prefWidth="380.0" style="-fx-spacing: 15;">
+                           <children>
+                              <Button fx:id="botonRegresar" mnemonicParsing="false" onAction="#clickBotonCancelar" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: rgba(132, 153, 226, 1);" text="Regresar" textFill="#f7f7f7">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="botonAgProducto" mnemonicParsing="false" onAction="#clickBotonAceptar" prefHeight="37.0" prefWidth="219.0" style="-fx-background-color: #0e103c;" text="Agregar producto" textFill="#f7f7f7">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

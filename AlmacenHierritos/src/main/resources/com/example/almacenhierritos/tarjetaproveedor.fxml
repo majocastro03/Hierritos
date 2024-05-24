@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.5" prefWidth="254.0" style="-fx-padding: 10; -fx-spacing: 5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="173.0" prefWidth="254.0">
+         <children>
+            <VBox prefHeight="138.0" prefWidth="174.0">
+               <children>
+                  <Label fx:id="labelNombre" alignment="BOTTOM_LEFT" prefHeight="77.0" prefWidth="168.0" text="Nombre proveedor" textFill="#0e103c" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelNIT" alignment="BOTTOM_LEFT" prefHeight="30.0" prefWidth="168.0" text="NIT proveedor" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelID" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="168.0" text="ID proveedor" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="138.0" prefWidth="72.0">
+               <children>
+                  <Button fx:id="botonOK" mnemonicParsing="false" prefHeight="167.0" prefWidth="79.0" style="-fx-background-color: #8AE3A6;" text="✅" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="28.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" spacing="20.0" style="-fx-background-color: white; -fx-padding: 0px; -fx-spacing: 0px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.almacenhierritos.NuevaOrdenController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white; -fx-padding: 10px; -fx-spacing: 15;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="298.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 10;">
+               <image>
+                  <Image url="@Images/logo.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="546.0" style="-fx-background-color: C5D0F6; -fx-background-radius: 20; -fx-max-height: 30; -fx-translate-y: 33; -fx-padding: 4; -fx-spacing: 10;">
+               <children>
+                  <TextField fx:id="textfieldBuscar" prefHeight="0.0" prefWidth="429.0" promptText="¿Qué necesitas?" style="-fx-background-radius: 20;">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="botonBuscar" mnemonicParsing="false" onAction="#clickBotonBuscar" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: F6F7FF; -fx-background-radius: 20; -fx-pref-height: 17; -fx-max-height: 17;" text="Buscar" textFill="#0e103c">
+                     <font>
+                        <Font name="Segoe UI Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" maxWidth="911.0" prefHeight="346.0" prefWidth="900.0" style="-fx-spacing: 20;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="207.0" prefWidth="840.0" style="-fx-background-color: E0E7FE; -fx-spacing: 20; -fx-pref-height: fill; -fx-max-width: 844;">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="223.0" prefWidth="501.0" style="-fx-spacing: 10; -fx-padding: 20;">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="332.0" text="Empresa Proveedora" textFill="#0e103c">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textfieldEmpresaProveedora">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label prefHeight="18.0" prefWidth="400.0" text="Nombre Vendedor" textFill="#0e103c">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textfieldNombreVendedor">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label prefHeight="18.0" prefWidth="416.0" text="Nombre Producto" textFill="#0e103c">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="comboboxNombreProducto" maxHeight="23.2" prefHeight="23.2" prefWidth="398.0" promptText="Escoge" style="-fx-background-color: white;" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="223.0" prefWidth="521.0" style="-fx-spacing: 10; -fx-padding: 20;">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="332.0" text="Cantidad Producto" textFill="#0e103c">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textfieldCantidadProducto">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label prefHeight="18.0" prefWidth="400.0" text="Precio" textFill="#0e103c">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textfieldPrecio">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </TextField>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 20;">
+                           <children>
+                              <VBox prefHeight="57.0" prefWidth="221.0" style="-fx-spacing: 10;">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="416.0" text="Forma De Pago" textFill="#0e103c">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="comboboxFormaPago" maxHeight="23.2" prefWidth="221.0" promptText="Escoge" style="-fx-background-color: white;" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="57.0" prefWidth="218.0" style="-fx-spacing: 10;">
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="416.0" text="Porcentaje De Descuento" textFill="#0e103c">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textfieldPorcentaje">
+                                       <font>
+                                          <Font name="Segoe UI" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 15;">
+               <children>
+                  <Button fx:id="botonAceptar" mnemonicParsing="false" onAction="#clickBotonAceptar" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #0e103c;" text="Aceptar" textFill="#f7f7f7">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botonCancelar" mnemonicParsing="false" onAction="#clickBotonCancelar" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: rgba(132, 153, 226, 1);" text="Cancelar" textFill="#f7f7f7">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
